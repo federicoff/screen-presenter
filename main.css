@@ -3975,16 +3975,39 @@
 .orange * {
   color: #000 !important;
 }
+.orange.date,
+.orange.title {
+  border: 1px solid #000 !important;
+}
 .orange2 {
+  background: #fff;
+  background-color: #fff !important;
+  color: #e56200 !important;
+}
+.orange2 * {
+  background-color: #fff !important;
+}
+.orange2 * {
+  color: #e56200 !important;
+}
+.orange2.date,
+.orange2.title {
+  border: 1px solid #e56200 !important;
+}
+.orange3 {
   background: #000;
   background-color: #000 !important;
   color: #e56200 !important;
 }
-.orange2 * {
+.orange3 * {
   background-color: #000 !important;
 }
-.orange2 * {
+.orange3 * {
   color: #e56200 !important;
+}
+.orange3.date,
+.orange3.title {
+  border: 1px solid #e56200 !important;
 }
 .blue {
   background: #09a1c2;
@@ -3997,6 +4020,10 @@
 .blue * {
   color: #000 !important;
 }
+.blue.date,
+.blue.title {
+  border: 1px solid #000 !important;
+}
 .blue2 {
   background: #000;
   background-color: #000 !important;
@@ -4007,6 +4034,40 @@
 }
 .blue2 * {
   color: #09a1c2 !important;
+}
+.blue2.date,
+.blue2.title {
+  border: 1px solid #09a1c2 !important;
+}
+.default2 {
+  background: #000;
+  background-color: #000 !important;
+  color: #fff !important;
+}
+.default2 * {
+  background-color: #000 !important;
+}
+.default2 * {
+  color: #fff !important;
+}
+.default2.date,
+.default2.title {
+  border: 1px solid #fff !important;
+}
+.default3 {
+  background: #fff;
+  background-color: #fff !important;
+  color: #000 !important;
+}
+.default3 * {
+  background-color: #fff !important;
+}
+.default3 * {
+  color: #000 !important;
+}
+.default3.date,
+.default3.title {
+  border: 1px solid #000 !important;
 }
 /****************************************************************************/
 /****************************************************************************/
@@ -4053,13 +4114,50 @@
   width: 100%;
   height: 100%;
 }
-.screen-presenter>.content .inner-content.p50 .media-player>* {
+.screen-presenter>.content .inner-content.expand>* img,
+.screen-presenter>.content .inner-content.expand .media-player>* img {
+  height: 100%;
+  width: auto;
+}
+.screen-presenter>.content .inner-content.p50 .media-player *:not(img) {
   width: 50%;
   height: 50%;
 }
-.screen-presenter>.content .inner-content.p75 .media-player>* {
+.screen-presenter>.content .inner-content.p50 .media-player img {
+  height: auto !important;
+  width: 50%;
+}
+.screen-presenter>.content .inner-content.p75 .media-player *:not(img) {
   width: 75%;
   height: 75%;
+}
+.screen-presenter>.content .inner-content.p75 .media-player img {
+  height: auto !important;
+  width: 75%;
+}
+.screen-presenter>.content .inner-content.p85 .media-player *:not(img) {
+  width: 85%;
+  height: 85%;
+}
+.screen-presenter>.content .inner-content.p85 .media-player img {
+  height: auto !important;
+  width: 85%;
+}
+.screen-presenter>.content .inner-content.p90 .media-player *:not(img) {
+  width: 90%;
+  height: 90%;
+}
+.screen-presenter>.content .inner-content.p90 .media-player img {
+  height: auto !important;
+  width: 90%;
+}
+.screen-presenter>.content .inner-content.p95 .media-player *:not(img) {
+  width: 95%;
+  height: 95%;
+}
+.screen-presenter>.content .inner-content.p95 .media-player img {
+  height: auto !important;
+  width: 95%;
 }
 .screen-presenter>.content .inner-content.center {
   align-items: center;
@@ -4097,6 +4195,10 @@
 .screen-presenter>.content .scrolling-text.orange * {
   color: #000 !important;
 }
+.screen-presenter>.content .scrolling-text.orange.date,
+.screen-presenter>.content .scrolling-text.orange.title {
+  border: 1px solid #000 !important;
+}
 .screen-presenter>.content .scrolling-text.blue {
   background: #09a1c2;
   background-color: #09a1c2 !important;
@@ -4107,6 +4209,10 @@
 }
 .screen-presenter>.content .scrolling-text.blue * {
   color: #000 !important;
+}
+.screen-presenter>.content .scrolling-text.blue.date,
+.screen-presenter>.content .scrolling-text.blue.title {
+  border: 1px solid #000 !important;
 }
 /****************************************************************************/
 /****************************************************************************/
@@ -4154,8 +4260,8 @@
 }
 .screen-presenter>.metadata>.l-content>.location {
   margin-top: auto;
-  margin-bottom: 18px;
-  padding: 4px;
+  margin-bottom: 14px;
+  padding: 8px;
   padding-right: 12px;
   font-size: 40px;
   min-width: 250px;
